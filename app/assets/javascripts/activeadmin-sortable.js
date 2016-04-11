@@ -11,7 +11,7 @@
         $.ajax({
           url: url,
           type: 'post',
-          data: { position: ui.item.index() },
+          data: { position: ui.item.index() + 1 },
           success: function() {
             $("tr", $('.handle').closest('tbody')).removeClass('even odd');
             $("tr", $('.handle').closest('tbody')).filter(":even").addClass('odd');
